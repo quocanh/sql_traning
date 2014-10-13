@@ -1,0 +1,27 @@
+a) Get all student not taking 'Physics' class. 
+select s.* 
+from student s 
+left join 
+  ( select student_id from registration r 
+    join class c on r.class_id = c.id
+    where c.class_name = 'Physics'
+  ) reg
+  on reg.student_id = s.id 
+where reg.student_id is null;
+
+b) Find out who takes most classes
+select s.*
+from student s 
+join registration r on r.student_id = s.id
+group by s.id
+having count(*) >= 
+  ( select max(class_count) 
+    from (select student_id,count(*) as class_count from registration group by student_id) r
+  )
+;
+
+c) Find out which student doesnt take any class.
+select s.*
+from student s 
+left join registration r on r.student_id = s.id
+where r.student_id is null;

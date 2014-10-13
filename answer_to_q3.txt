@@ -1,0 +1,13 @@
+For all queries all returned rows must satisfy query conditions.
+
+In addition to that:
+- INNER JOIN: Returns all rows that exist in BOTH tables
+- LEFT JOIN: Return all rows from the left table, if required field is not found from the right table its value is NULL.
+- LEFT JOIN is shortcut for LEFT OUTER JOIN
+- RIGHT JOIN: Return all rows from the right table, if required field is not found from the left table its value is NULL.
+- RIGHT JOIN is shortcut for RIGHT OUTER JOIN
+- FULL JOIN: Return all rows when there is a match in ONE of the tables
+The FULL OUTER JOIN keyword returns all rows from the left table (table1) and from the right table (table2).
+- OUTER JOIN is shortcut for FULL OUTER JOIN
+
+Note: mysql doesn't support OUTER JOIN.

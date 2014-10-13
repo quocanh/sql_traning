@@ -1,0 +1,1 @@
+Yes, to keep data in one DB for some organization. There may be a need to link it to the rest of DB using some new table.
