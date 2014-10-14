@@ -1,1 +1,3 @@
-Yes, to keep data in one DB for some organization. There may be a need to link it to the rest of DB using some new table.
+Yes, to keep data in one DB for some organization.
+People may run queries on the table to get the data they need.
+There could be a need to link the table to the rest of DB using some new table.

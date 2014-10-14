@@ -1,0 +1,17 @@
+1) What is ER model (ref: http://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model) Try to use more references in your answer
+
+2) Where do we keep our mdc_prod schema diagram?
+The table ACCOUNT_PROVIDER was introduced recently, so this question asks you not to use it. Without ACCOUNT_PROVIDER table, how can we get provider for a lab_account? Explain your steps in words in a file. Write a sql statement to get all providers for LAB_ACCT_KEY=20 in a file named 'answer_to_provider_question.sql'. Please don't specify database name in the script so that the grader can test it in appropriate DB.
+
+3) What is JOIN, INNER JOIN, LEFT JOIN, LEFT OUTER JOIN, RIGHT JOIN, RIGHT OUTER JOIN, OUTER JOIN?
+
+4) Can a database have a table that cannot join to any other one, i.e. any INNER JOIN with the table always results in empty set? Explain why you think so.
+
+5) How many JOIN clauses you need to get information from 6 tables?
+
+-----
+The attached training.sql file attached to this card is used to answer the 2 problems below. You will need to choose a database on your machine and load the tables.
+
+6) Three tables: students, classes, registration. Get all students in classA. a) Get all student not taking 'Physics' class. b) Find out who takes most classes c) Find out which student doesn't take any class.
+
+7) There are employee and award tables. Get all employees who get some award along with his/her latest award. Only show latest award(s). The answer must be in a script named ‘answer_to_award_question.sql’. Please don't specify database name in the script so that the grader can test it in appropriate DB.
